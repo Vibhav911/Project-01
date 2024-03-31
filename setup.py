@@ -1,0 +1,28 @@
+# This will build my machine learning application as package and help it to deploy in the pipeline
+
+from setuptools import find_packages, setup
+from typing import List
+
+HYPHEN_E_DOT = '-e .'
+def get_requirements(file_path:str)->List[str]:
+    '''
+    This function will return the list of requirements
+    '''
+    requirements = []
+    with open(file_path) as file_obj:
+        requirements = file_obj.readlines()
+        requiremnets = [req.replace('\n','') for req in requirements]
+
+        if HYPHEN_E_DOT in requirements:
+            requirements.remove(HYPHEN_E_DOT)
+
+    return requirements
+
+setup(
+name='project_01',
+version='0.01',
+author='Vibhav',
+author_email='vibhav09112003@gmail.com',
+packages=find_packages(),
+install_requires=get_requirements('requirements.txt')
+)
