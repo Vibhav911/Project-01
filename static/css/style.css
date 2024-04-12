@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #424769;
+  }
+
+.top-left-link {
+        position: absolute;
+        bottom: 20px; /* Add some top margin */
+        left: 20px; /* Add some left margin */
+        padding: 10px; /* Add some padding */
+        background-color: #DCAE96; /* Add a background color */
+        border-radius: 5px; /* Add some rounded corners */
+        font-size: 16px; /* Increase the font size */
+        color: rgb(16, 13, 13); /* Change the font color */
+        text-decoration: none; /* Remove the underline */
+        font-weight: bold;
+  }
+
+.profile
+  {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+        padding: 20px; /* adds 30 pixels of padding around the image */        
+  }
+  
+  .form-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #F6B17A;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 45px;
+  }
+
+  h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], select {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #2D3250;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2D3250;
+  }
+  
+  .form-group {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    font-size: 18px;
+    width: 30%;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    
+  }
