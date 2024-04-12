@@ -15,9 +15,6 @@ class PredictPipeline:
             preprocessor_path = os.path.join('artifacts/preprocessor.pkl')
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path = preprocessor_path)
-            # features = features.reshape(-1,1)
-            #features = np.array(features)
-            #features = features.reshape(-1,1)
             data_scaled = preprocessor.transform(features)
             preds = model.predict(data_scaled)
             return preds 
